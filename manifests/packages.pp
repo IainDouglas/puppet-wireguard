@@ -78,7 +78,7 @@ class wireguard::packages (
     owner   => 'root',
     group   => 'root',
     mode    => '0700',
-    purge   => true,
+    purge   => false,
     recurse => true,
     require => Package['wireguard-tools'],
   }
